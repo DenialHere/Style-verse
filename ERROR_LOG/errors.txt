@@ -1,0 +1,116 @@
+Exception Caught: Call to undefined function setFirstName()
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\customer.php
+Error Line: 22
+Date: 2021-04-21 17:18:15.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0
+========================
+Exception Caught: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Dania00' for key 'username'
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\customer.php
+Error Line: 51
+Date: 2021-04-21 17:45:02.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0
+========================
+Error number: 2
+Error sting: Use of undefined constant row - assumed 'row' (this will throw an Error in a future version of PHP)
+Error file: C:\xampp\htdocs\midTermProject\index.php
+Error Line: 30
+Error context: Array
+Date: 2021-04-21 17:46:27.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0
+========================
+Exception Caught: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Dania00' for key 'username'
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\customer.php
+Error Line: 51
+Date: 2021-04-21 17:55:51.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0
+========================
+Exception Caught: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Dania00' for key 'username'
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\customer.php
+Error Line: 51
+Date: 2021-04-21 17:59:04.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0
+========================
+Exception Caught: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Dania00' for key 'username'
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\customer.php
+Error Line: 51
+Date: 2021-04-21 18:13:00.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0
+========================
+Exception Caught: SQLSTATE[42000]: Syntax error or access violation: 1370 execute command denied to user 'user-1912983'@'localhost' for routine 'database-1912983.get_password'
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\customer.php
+Error Line: 132
+Date: 2021-05-01 18:05:24.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0
+========================
+Exception Caught: SQLSTATE[HY000] [1045] Access denied for user 'user-1912983'@'localhost' (using password: YES)
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\connection.php
+Error Line: 3
+Date: 2021-05-01 18:05:54.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0
+========================
+Exception Caught: SQLSTATE[42000]: Syntax error or access violation: 1370 execute command denied to user 'user-1912983'@'localhost' for routine 'database-1912983.get_password'
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\customer.php
+Error Line: 132
+Date: 2021-05-01 18:06:01.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0
+========================
+Exception Caught: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`database-1912983`.`purchases`, CONSTRAINT `FK_purchases_customers` FOREIGN KEY (`customer_uuid`) REFERENCES `customers` (`customer_uuid`))
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\purchase.php
+Error Line: 55
+Date: 2021-05-01 22:46:41.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0
+========================
+Exception Caught: Call to undefined method purchase::getPurchaseQuantity()
+Error File: C:\xampp\htdocs\midTermProject\searchDate.php
+Error Line: 59
+Date: 2021-05-01 22:47:23.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0
+========================
+Exception Caught: syntax error, unexpected ')'
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\purchase.php
+Error Line: 113
+Date: 2021-05-02 14:01:55.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0
+========================
+Exception Caught: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin' for key 'username'
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\customer.php
+Error Line: 95
+Date: 2021-05-02 14:58:50.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+========================
+Exception Caught: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Admin1' for key 'username'
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\customer.php
+Error Line: 95
+Date: 2021-05-02 15:00:30.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+========================
+Exception Caught: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin' for key 'username'
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\customer.php
+Error Line: 95
+Date: 2021-05-02 15:01:57.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+========================
+Exception Caught: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Danial' for key 'username'
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\customer.php
+Error Line: 95
+Date: 2021-05-02 15:26:40.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+========================
+Exception Caught: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Admin2' for key 'username'
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\customer.php
+Error Line: 95
+Date: 2021-05-02 15:26:44.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+========================
+Exception Caught: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Test' for key 'username'
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\customer.php
+Error Line: 95
+Date: 2021-05-02 15:27:03.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+========================
+Exception Caught: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Admin1' for key 'username'
+Error File: C:\xampp\htdocs\midTermProject\OBJECTS\customer.php
+Error Line: 95
+Date: 2021-05-02 15:28:04.000000
+Browser: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+========================

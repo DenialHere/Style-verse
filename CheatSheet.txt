@@ -1,0 +1,139 @@
+
+
+#Danial Gosse php cheat sheet
+
+
+##Define constants for all folders/ frequently used stuff
+    //define("FOLDER_PHP", "PHP/");
+
+##Link to php file
+    //require_once FILE_PHP_FUNCTIONS;
+
+##Always send network headers before generating html
+    //header('content-type: text/html; charset=utf-8');
+    //mb_strlen($productCode) 
+
+#Send network headers to prevent caching
+    //header("Expires: Thu, 01 Dec 1994 08:00:00 GMT");
+    //header("Cache-Control: no-cache");
+    //header("Pragma: no-cache"); 
+
+#Protect user inputs from html injection
+    //$city = htmlspecialchars (trim($_POST[CITY]));
+
+#File open/read/write/close/encode to json
+    //$myFile = fopen(ORDER_FOLDER . PURCHASES_FILE, "a") or die("The file couldnt be opened");
+    //fgets($myFile)
+    //fwrite($myFile, $order[$i] . "\r\n");  
+    //fclose($myFile);
+    //$json_order = json_encode($order);
+
+
+//Getting and storing date & browser information
+    //$date = date("Y-m-d H:i:s.u");
+    //$browser = $_SERVER["HTTP_USER_AGENT"];
+
+#Getting command parameters
+//isset($_GET["command"])
+
+//Forcing HTTPS
+if (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] != "on"){
+    header('Location: https://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+    exit();
+}
+
+//Checking if a value is a float
+floor($purchase_quantity) == $purchase_quantity)
+
+//Starting session
+    session_start();
+
+//closing and elete session data
+    session_unset();
+        session_destroy(); 
+        
+
+//Saving session variables
+    $_SESSION["customer_uuid"]);
+    
+    
+//Establishing database connection
+    $connection = new PDO("mysql:host=localhost;dbname=database-1912983", "root", "lasalle");
+
+    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+//Calling a stored procedure and binding parameters
+        $sqlQuery = "CALL insert_purchase(:customer_uuid, :product_uuid, :purchase_quantity, :comments, :subtotal, :tax_amount, :grand_total);";
+        $PDOStatment = $connection->prepare($sqlQuery);
+        $PDOStatment->bindparam(":customer_uuid", $this->customer_uuid);
+        $PDOStatment->execute();
+        
+//Looping through db results
+        if ($row = $PDOStatment->fetch()){
+            $this->purchase_uuid = $row["purchase_uuid"];
+            return true;
+        }
+
+//Making a constructor for an object
+    function __construct($purchase_uuid = "") {}
+    
+    
+//Collection commands
+    public $items = array();   
+
+    public function add($primary_key, $item){
+        $this->items[$primary_key] = $item;
+    }
+    public function remove($primary_key){
+        if (isset($this->items[$primary_key])){
+            unset($this->items[$primary_key]);
+        }
+
+    }
+     public function get($primary_key){
+        if (isset($this->items[$primary_key])){
+            return $this->items[$primary_key];
+        }
+
+   }
+
+     public function count(){
+            return count($this->items);
+
+   }
+   //Password encrypting and decrypting
+   $encrypted = password_hash($password, PASSWORD_DEFAULT);
+   password_verify($password, $this->password
+   
+//Adding to a Plural class 
+ while ($row = $PDOStatment->fetch()){
+            $customer = new customer($row["customer_uuid"],
+                    $row["first_name"], 
+            $this->add($row["customer_uuid"], $customer);
+   
+   
+   
+   
+//Javascript
+    //SETTING A XHR VARIABLE
+        var xhr = new XMLHttpRequest();
+        
+        xhr.onreadystatechange = function()
+        { 
+            if (xhr.readyState == 4 && xhr.status == 200)
+            {
+                //GETTING an element from html
+                document.getElementById('searchResults').innerHTML = xhr.responseText;
+            }
+        } 
+        //say what page you want to open
+        xhr.open("POST", "searchDate.php");
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        //sending the valuess
+        xhr.send("year=" + searchedYear + "&username=" + username);
+        
+//error handling        
+    function handleError(error)
+    {
+     alert("An error occured in the js code" + error);   
+    }

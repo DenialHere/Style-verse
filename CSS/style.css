@@ -1,0 +1,264 @@
+/*
+Revision history:
+DEVELOPER          DATE            COMMENTS         
+Danial Gosse       2021-02-14      Created some general css + nav style testing 
+                                   + ad testing.
+Danial Gosse       2021-02-15      Finalized general style of website + removed
+                                   repeated css and made new class with commonly 
+                                   used elements + finialzed design of index.
+Danial Gosse       2021-02-28      Added more general css + added style for home
+                                   page and buy page
+Danial Gosse       2021-03-03      Fixed navbar css
+Danial Gosse       2021-03-10      Added css for text colors for the print 
+                                   command + added table head color
+Danial Gosse       2021-04-10      Added + updated css for login form
+
+Danial Gosse       2021-04-21      Added + updated more css for login form +
+                                   updated styling on nav nav bar
+
+Danial Gosse       2021-04-23      Added styling for register page
+
+Danial Gosse       2021-04-23      Added styling for buy page
+
+Danial Gosse       2021-04-30      Updated styling for orders page
+
+*/
+
+/* General CSS */
+body {
+    font-family: Georgia, serif;
+    font-size: 107%;
+    background-color: #f8f8ff;
+    margin: 10px 0px 10px 0px;
+}
+ td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+table{
+     border-collapse: collapse;
+     width: 100%; 
+}
+th {
+    background-color: lightgray;
+}
+/* Frequent call CSS */
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+.blk-back {
+    background-color: black;
+}
+.wht-txt {
+    color: white;
+}
+.grid {
+    display: grid;
+}
+.just-cent {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    grid-template-columns: repeat(5, 1fr);
+}
+.italic {
+    font-style: italic;
+}
+.mar-btm {
+    margin-bottom: 20px;
+}
+.mar-top {
+    margin-top: 20px;
+}
+.mar-btm5 {
+    margin-bottom: 5px;
+}
+.inline {
+    display: inline;
+}
+.text {
+    font-weight: lighter;
+    font-size: 0.7em;
+}
+.li-none {
+ list-style-type: none;
+ padding-left: 0px;
+}
+.space {
+    margin: 200px;
+}
+.bold {
+   font-weight: bold; 
+}
+.red {
+    color: red;
+}
+.orange {
+    color:#fdad5c;
+}
+.green {
+    color: green;
+}
+.opc {
+    opacity: 0.3;
+}
+.hide {
+    display: none;
+}
+
+/* Nav bar */
+.nav-container ul {
+    grid-template-columns: repeat(7, 1fr);
+    border-bottom: 3px black solid;
+    margin-bottom: 0px;
+}
+.nav-container a{
+    color: black;
+    text-decoration: none;
+}
+.nav-container a:hover{
+    color: #ffa200;
+}
+
+.logo  {
+    width: 40%;
+}
+
+/* Ads */  
+.ad{
+    width: 700px;
+    height: 200px;
+    object-fit: fill;
+    border: 2px solid black;
+}
+.special-ad {
+    border: 5px solid red;
+    width: 1400px;
+    height: 200px;
+}
+/* Footer */
+footer {
+    border-radius: 2px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/*Index */
+.fashion {
+    width: 100%;
+    height: 100%;
+}
+.inner {
+    padding-bottom: 100px;
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+.item {
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+.btn-fnd-out {
+    margin-top: 20px;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+/*Home */
+.container-home {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px 0px 10px 0px;
+    border-bottom: 2px solid black;
+}
+.fashion_pic {
+    width: 70%;
+}
+
+/*Buy */
+.container-buy {
+    margin-top: 40px;
+    font-size: large;
+}
+.container-buy input {
+    width: 30%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.container-buy label{
+border-bottom: 1px solid black;
+    
+}
+/* Login */
+.item2 {
+    grid-column-start: 7;
+    grid-column-end: 7;
+    padding-right: 10px;
+}
+.login-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+.btn-login {
+    margin-top: 5px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    grid-column-start: 2;
+    width: 100%
+}
+#register {
+    font-size: 0.7em;
+    color: blue;
+    text-decoration: underline;
+}
+.invalid {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* Register form */
+
+.register-form{
+    border: 3px black solid;
+    width: 100%;
+    box-sizing: content-box;
+
+}
+
+/* NEW buy form */
+.buy-grid {
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.btn-buy {
+    margin-top: 20px;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+.buy-grid input{
+    grid-column-start: 3;
+    text-align: center;
+
+}
+.buy-grid label {
+    grid-column-start: 2;
+}
+.buy-grid select {
+    text-align: center;
+}
+.buy-grid span{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
